@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f6f6f6;
+}
+
+.fixedElements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    overflow-y: auto;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.originalPost {
+    position: sticky;
+    top: 0;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.commentsSection {
+    flex-grow: 1;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.displayName {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.content {
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.comment {
+    display: flex;
+    background-color: #f6f6f6;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.commentHeader {
+    display: flex;
+    width: 100%;
+}
+
+.commentIcon {
+    width: 60px;
+    height: 60px;
+}
+
+.commentDetails {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.commentContent {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.commentContent p {
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.commentNameActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.commentActions {
+    display: flex;
+}
+
+
+.createComment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    bottom: 0px;
+    left: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+#inputDisplayName {
+    width: 150px;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="text"]:not(#inputDisplayName) {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.editInput {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 90%;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #b1d9e6;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #007bff;
+}
